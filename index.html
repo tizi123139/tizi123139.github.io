@@ -13,12 +13,28 @@
             height:auto;
             margin-top: 50px;
         }
-        .abouts ul:hover{
-            transition: all;
+
+        .kaifa:hover{
+          transition: all;
           cursor: pointer; 
-          height:210px;
-          width: 1500px;
+          transform: scale(1.01); 
         }/*鼠标移动到四个框上会发生变化*/
+        
+        .chanping:hover{
+          transition: all;
+          cursor: pointer; 
+          transform: scale(1.01); 
+        }
+        .youxi:hover{
+          transition: all;
+          cursor: pointer; 
+          transform: scale(1.01); 
+        }
+        .anquan:hover{
+          transition: all;
+          cursor: pointer; 
+          transform: scale(1.01); 
+        }
         .main {
             width:1500px;
             height:1000px;
@@ -127,8 +143,7 @@
           transition: all;
           box-shadow: 6px 4px 6px slategrey;
           cursor: pointer; 
-          height:500px;
-          width: 310px;
+          transform: scale(1.1); 
          } /*鼠标移动到三个框会发生变化*/
 
         .abouts ul li .right_contents{
@@ -270,8 +285,8 @@
     <div class="abouts"><!--设置introduction板块-->
         
         <h2 class="introduction" id="intro">Introduction</h2>
-        <ul>
-            <li>  
+        <ul >
+            <li class="kaifa">  
                 <div class="right_contents">
                     <h1>开发程序员</h1><br>
                     <h2 class="jjj">“Stay Hungry，Stay Foolish”</h2><br>
@@ -281,7 +296,7 @@
                 </div>
                 <img src="复刻招新网站要求点/images/Geek_Programmer.png" alt="" class="img1">
             </li>
-            <li>
+            <li class="chanping">
                 <img src="复刻招新网站要求点/images/Geek_PM.png" alt="" class="img2">
                 <div class="right_contents">
                     <h1>产品经理</h1><br>
@@ -289,8 +304,7 @@
                     PM是针对某一项或是某一类的产品进行规划和管理的人员。 PM需要拥有缜密的产品逻辑思维，研究用户心理，负责产品的整个生命周期。 PM参与产品的UI和交互设计，为设计和开发确定产品原型，能够将产品变得有个性,操作变得舒适简单、自由。 PM需要一定的文档能力和沟通能力，能够在团队合作的过程中跟各个角色进行有效沟通。
                 </div>
             </li>
-            <li>
-                
+            <li class="youxi">
                 <div class="right_contents">
                     <h1>游戏开发</h1><br>
                     <h2 class="lll">"TECH OTAKUS SAVE THE WORLD"</h2><br>
@@ -298,7 +312,7 @@
                 </div>
                 <img src="复刻招新网站要求点/images/Geek_Game.png" alt="" class="img1">
             </li>
-            <li>
+            <li class="anquan">
                 <img src="复刻招新网站要求点/images/Geek_security.png" alt="" class="img2">
                 <div class="right_contents">
                     <h1>安全</h1><br>
