@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <style>
         
-     
+        .erweima {
+                position: absolute;
+                top: 50px;
+                left: 130px;
+                width: 230px;
+                height: 400px;
+                opacity: 0;/*图像初始为透明*/
+                z-index:1;
+             }/*设置二维码*/
+
+        .erweima:hover{
+                opacity: 1;}/*鼠标移动到此处，图像显示出来*/
+
         .abouts  ul{
             width:100%;
             height:auto;
@@ -240,11 +252,11 @@
 </head>
 <body>
     <div class="header">  <!--导航栏的五个标题-->
-        <a href="#intro">Introduction</a><!--点开可滑动至对应页面-->
-        <a href="#about">About US</a><!--点开可滑动至对应页面-->
-        <a href="https://campus.new-thread.com" target="_blank">NewThread</a><!--点开跳转到其他页面-->
-        <a href="#con">Contact US</a><!--点开可滑动至对应页面-->
-        <a href="#qqaa">Q&A</a><!--点开可滑动至对应页面--> 
+        <button class="duction"><a href="#intro">Introduction</a><img class="erweima" src="复刻招新网站要求点/images/qrcode_1699620268564.jpg" alt=""></button><!--点开可滑动至对应页面-->
+        <button><a href="#about">About US</a></button><!--点开可滑动至对应页面-->
+        <button><a href="https://campus.new-thread.com" target="_blank">NewThread</a></button><!--点开跳转到其他页面-->
+        <button><a href="#con">Contact US</a></button><!--点开可滑动至对应页面-->
+        <button><a href="#qqaa">Q&A</a></button><!--点开可滑动至对应页面--> 
     </div>
     <style>
         .middle {
