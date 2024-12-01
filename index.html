@@ -269,7 +269,7 @@
             height:200px;
         }
     
-        .middle .overlay {
+        .middle .geek{
             position: absolute;
             top: 150px;
             left: 50%;
@@ -278,11 +278,12 @@
             height: auto;
             object-fit: cover;
         }/*将geek大标志放在背景图中*/
-        .overlay:hover{
+        .geek:hover{
           transition: all;
           cursor: pointer; 
           height:350px;
-          width: 700px;/*给geek标志设置样式，鼠标移动会变大*/
+          width: 700px;
+          transition: 0.3s;/*给geek标志设置样式，鼠标移动会变大*/
          } 
 
         
@@ -290,7 +291,7 @@
     </style>
     <section class="middle">
         <img src="复刻招新网站要求点/images/background_Homepage.png" alt="" style="width: 100%; height: auto;">
-        <img src="复刻招新网站要求点/images/decoration_Geek.png" alt="" class="overlay">
+        <img src="复刻招新网站要求点/images/decoration_Geek.png" alt="" class="geek">
     </section>
 
 <img src="复刻招新网站要求点/images/decoration_Transition.png" alt="" class="img0">
@@ -633,11 +634,8 @@
             // 复制内容到剪贴板
             navigator.clipboard.writeText(textToCopy)
                 .then(() => {
-                    alert('数字已复制到剪贴板：' + textToCopy);
+                    alert('Geek的邮箱已经复制到剪贴板了❤(*^▽^*)(*^▽^*)❤' );
                 })
-                .catch(err => {
-                    console.error('复制失败：', err);
-                });
         });
     </script>
 </body>
