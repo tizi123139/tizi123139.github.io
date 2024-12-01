@@ -610,29 +610,24 @@
             Reserved 备案号：有个屁啊随便写</div>
     </div>
     <script>//设置复制邮箱按钮
-        // 获取 class 为 'wzy' 的主容器
-        const wzy = document.querySelector('.wzy');
+        
+        const wzy = document.querySelector('.wzy');// 获取 class 为 'wzy' 的主容器
     
-        // 获取提示框（span 元素）
-        const tool = wzy.querySelector('span');
-    
-        // 当鼠标移入，显示提示框
+        const tool = wzy.querySelector('span');// 获取提示框（span 元素）
+   
        wzy.addEventListener('mouseenter', () => {
             tool.style.display = 'block'; // 显示提示框
-        });
+        }); // 当鼠标移入，显示提示框
     
-        // 当鼠标移出，隐藏提示框
+       
         wzy.addEventListener('mouseleave', () => {
             tool.style.display = 'none'; // 隐藏提示框
-        });
+        }); // 当鼠标移出，隐藏提示框
     
         const button = wzy.querySelector('button');
         button.addEventListener('click', () => {
-            // 获取提示框中的数字内容
-            const textToCopy = tool.textContent;
-    
-            // 复制内容到剪贴板
-            navigator.clipboard.writeText(textToCopy)
+            const textToCopy = 'newthread_geek@outlook.com';
+            navigator.clipboard.writeText(textToCopy) // 复制内容到剪贴板
                 .then(() => {
                     alert('Geek的邮箱已经复制到剪贴板了❤(*^▽^*)(*^▽^*)❤' );
                 })
