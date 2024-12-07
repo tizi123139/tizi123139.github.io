@@ -1,3 +1,39 @@
+@font-face {
+    font-family: "iconfont"; /* Project id 4773609 */
+    src: url('//at.alicdn.com/t/c/font_4773609_8o7hmrzcbun.woff2?t=1733563476184') format('woff2'),
+         url('//at.alicdn.com/t/c/font_4773609_8o7hmrzcbun.woff?t=1733563476184') format('woff'),
+         url('//at.alicdn.com/t/c/font_4773609_8o7hmrzcbun.ttf?t=1733563476184') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-shouye:before {
+    content: "\e600";
+  }
+  
+  .icon-xiangxia:before {
+    content: "\e601";
+  }
+  
+  .icon-dianhua:before {
+    content: "\e605";
+  }
+  
+  .icon-ren:before {
+    content: "\e604";
+  }
+  
+  .icon-xiaoxi:before {
+    content: "\e7ef";
+  }
+  
+
 *{
     padding:0;
     margin:0;
@@ -14,11 +50,13 @@
     justify-content: space-between;
     background-color: rgb(255, 171, 68);
     border-radius: 25px;
+    position: fixed;
+    z-index: 1000;
 }
 
 
 .header button{
-    width:100%;
+    width:20%;
     height:70px;
     line-height: 70px;
     display: flex;
@@ -27,12 +65,17 @@
     background-color: rgb(255, 171, 68);
     border-color: transparent;
     border-radius: 25px;
+    position: relative;
 }
 
 .header a{
     font-size: 27px;
     text-decoration: none;
     color: rgb(255, 254, 255);
+}
+.header button:hover{
+    background-color:  #ff8c00;;
+    color:#808080;
 }
 
 

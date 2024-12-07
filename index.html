@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geek招新网站 加入我们</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font.css">
     <style>
         
         .erweima {
                 position: absolute;
-                top: 50px;
-                left: 130px;
+                top: 30px;
+                left: 60px;
                 width: 230px;
                 height: 400px;
                 opacity: 0;/*图像初始为透明*/
                 z-index:1;
+                transition: opacity 0.5s;
              }/*设置二维码*/
 
         .erweima:hover{
-                opacity: 1;}/*鼠标移动到此处，图像显示出来*/
+                opacity: 1;
+                }/*鼠标移动到此处，图像显示出来*/
                
          .question{
             font-size: x-large ;
@@ -283,15 +286,16 @@
             border-top: transparent;
         }/* 给底页设置样式*/
        
+
     </style>
 </head>
 <body>
     <div class="header">  <!--导航栏的五个标题-->
-        <button class="duction"><a href="#intro">Introduction</a><img class="erweima" src="复刻招新网站要求点/images/qrcode_1699620268564.jpg" alt=""></button><!--点开可滑动至对应页面-->
-        <button><a href="#about">About US</a></button><!--点开可滑动至对应页面-->
-        <button><a href="https://campus.new-thread.com" target="_blank">NewThread</a></button><!--点开跳转到其他页面-->
-        <button><a href="#con">Contact US</a></button><!--点开可滑动至对应页面-->
-        <button><a href="#qqaa">Q&A</a></button><!--点开可滑动至对应页面--> 
+        <button class="duction"><a href="#intro">Introduction</a> <i class="iconfont icon-xiangxia" style="color: #ffffff;font-size: 20px;"></i>  <img class="erweima" src="复刻招新网站要求点/images/qrcode_1699620268564.jpg" alt=""></button><!--点开可滑动至对应页面-->
+        <button><a href="#about">About US</a><i class="iconfont icon-ren " style="color: #ffffff;font-size: 20px;"></i></button><!--点开可滑动至对应页面-->
+        <button><a href="https://campus.new-thread.com" target="_blank">NewThread</a><i class="iconfont icon-shouye" style="color: #ffffff;font-size: 20px;"></i></button><!--点开跳转到其他页面-->
+        <button><a href="#con">ContactUS</a><i class="iconfont icon-dianhua" style="color: #ffffff;font-size: 20px;"></i></button><!--点开可滑动至对应页面-->
+        <button><a href="#qqaa">Q&A</a><i class="iconfont icon-xiaoxi" style="color: #ffffff;font-size: 30px;margin-right: 50px;"></i></button><!--点开可滑动至对应页面--> 
     </div>
     <style>
         .middle {
@@ -307,18 +311,16 @@
         .middle .geek{
             position: absolute;
             top: 150px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 30%;
-            height: auto;
-            object-fit: cover;
+            left: 600px;
+            width: 500px;
+            height: auto;   
         }/*将geek大标志放在背景图中*/
-        .geek:hover{
-          transition: all;
+
+        .geek:hover{ 
           cursor: pointer; 
-          height:350px;
-          width: 700px;
-          transition: 0.3s;/*给geek标志设置样式，鼠标移动会变大*/
+          transform: scale(1.2);
+          transition: all;
+          transition: transform 0.5s;/*给geek标志设置样式，鼠标移动会变大*/
          } 
 
         
@@ -437,7 +439,7 @@
                 <p style="font-size: 30px;">•热爱计算机，具有geek精神，喜欢DIY，动手能力较强</p><br>
                 <p style="font-size: 30px;">•有编程/算法/硬件基础为佳(有作品可附上)</p><br>
                 <p style="font-size: 30px;">•有足够的空余时间，热爱思考，对事物有自己的见解</p><br><br>
-                <p style="font-size: 20px;"> ps:非新思路统招只有通过发送邮件自我介绍后，收到邮件回执后才会被允许进群,在读学生, 都可邮件到newthread_geek@outlook.com报名加入<br>(信中需备注个人基本信息以及意向方向,此招新活动为长期招新)</p>
+                <p style="font-size: 20px;color: #808080;"> ps:非新思路统招只有通过发送邮件自我介绍后，收到邮件回执后才会被允许进群,在读学生, 都可邮件到newthread_geek@outlook.com报名加入<br>(信中需备注个人基本信息以及意向方向,此招新活动为长期招新)</p>
              </ul>
              <br><br><br>
              <div style="text-align: center;">
@@ -473,7 +475,7 @@
         </div> 
     </div>
 
-    <div class="qa"><!--设置Q&A页面-->
+    <div class="qa" id="qqaa"><!--设置Q&A页面-->
         
            <h2 class="yyy">More Questions</h2> 
         <!--设置7个问题-->
